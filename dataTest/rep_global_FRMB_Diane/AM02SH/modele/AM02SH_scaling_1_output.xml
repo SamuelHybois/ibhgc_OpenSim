@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<ScaleSet name="ScaleSet">
+		<objects>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>ground</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.08662 1.08662 1.08662</scales>
+				<segment>thorax</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.08662 1.08662 1.08662</scales>
+				<segment>clavicle_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.24681 1.24681 1.24681</scales>
+				<segment>scapula_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.959632 0.959632 0.959632</scales>
+				<segment>humerus_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00409 1.00409 1.00409</scales>
+				<segment>ulna_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.02782 1.02782 1.02782</scales>
+				<segment>radius_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.34652 1.34652 1.34652</scales>
+				<segment>hand_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.08662 1.08662 1.08662</scales>
+				<segment>clavicle_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.24681 1.24681 1.24681</scales>
+				<segment>scapula_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.957239 0.957239 0.957239</scales>
+				<segment>humerus_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.97409 0.97409 0.97409</scales>
+				<segment>ulna_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.99173 0.99173 0.99173</scales>
+				<segment>radius_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.11358 1.11358 1.11358</scales>
+				<segment>hand_l</segment>
+				<apply>true</apply>
+			</Scale>
+		</objects>
+		<groups />
+	</ScaleSet>
+</OpenSimDocument>

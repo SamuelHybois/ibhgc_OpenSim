@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<ScaleTool name="SP04CD_scaled">
+		<mass>41</mass>
+		<height>-1</height>
+		<age>-1</age>
+		<notes>Unassigned</notes>
+		<GenericModelMaker>
+			<model_file>bilateral_STJ_generique_v01_modif.osim</model_file>
+			<marker_set_file>Unassigned</marker_set_file>
+		</GenericModelMaker>
+		<ModelScaler>
+			<apply>true</apply>
+			<scaling_order> measurements</scaling_order>
+<MeasurementSet file="scale_measure_set.xml"/>
+			<ScaleSet>
+				<objects />
+				<groups />
+			</ScaleSet>
+			<marker_file>Static_B_ref.trc</marker_file>
+			<time_range> 0.01 2.28 </time_range>
+			<preserve_mass_distribution>true</preserve_mass_distribution>
+			<output_model_file>SP04CD_model_step1.osim</output_model_file>
+			<output_scale_file>SP04CD_scale_output.xml</output_scale_file>
+		</ModelScaler>
+		<MarkerPlacer>
+			<apply>true</apply>
+<IKTaskSet file="scale_task.xml"/>
+			<marker_file>Static_B_ref.trc</marker_file>
+			<coordinate_file>Unassigned</coordinate_file>
+			<time_range> 0.01 2.28 </time_range>
+			<output_motion_file>SP04CD_motion.mot</output_motion_file>
+			<output_model_file>SP04CD_model_final.osim</output_model_file>
+			<output_marker_file>SP04CD_marqueurs_new_output.osim</output_marker_file>
+			<max_marker_movement>-1</max_marker_movement>
+		</MarkerPlacer>
+	</ScaleTool>
+</OpenSimDocument>

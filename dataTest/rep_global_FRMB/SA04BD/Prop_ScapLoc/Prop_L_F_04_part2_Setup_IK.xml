@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <InverseKinematicsTool name="SA04BD_model_final">
+      <results_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA04BD\Prop_ScapLoc</results_directory>
+      <input_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA04BD\Prop_ScapLoc</input_directory>
+      <model_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA04BD\modele\SA04BD_model_final.osim</model_file>
+      <constraint_weight>100</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet file="Prop_L_F_04_part2_ik_task.xml"/>
+      <marker_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA04BD\Prop_ScapLoc\Prop_L_F_04_part2.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>1.6 2.9</time_range>
+      <report_marker_locations>true</report_marker_locations>
+      <report_errors>true</report_errors>
+      <output_motion_file>Prop_L_F_04_part2_ik.mot</output_motion_file>
+   </InverseKinematicsTool>
+</OpenSimDocument>

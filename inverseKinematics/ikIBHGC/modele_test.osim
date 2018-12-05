@@ -1,0 +1,3165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<Model name="Generic_Model_Inferior">
+		<credits></credits>
+		<publications></publications>
+		<length_units>meters</length_units>
+		<force_units>N</force_units>
+		<!--Acceleration due to gravity.-->
+		<gravity> 0 0 -9.80665</gravity>
+		<!--Bodies in the model.-->
+		<BodySet>
+			<objects>
+				<Body name="ground">
+					<mass>0</mass>
+					<mass_center> 0 0 0</mass_center>
+					<inertia_xx>0</inertia_xx>
+					<inertia_yy>0</inertia_yy>
+					<inertia_zz>0</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint />
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects />
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1 1 1</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> 0 0 0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="pelvis">
+					<mass>9.13204392431205</mass>
+					<mass_center> -0.0839317 0 0</mass_center>
+					<inertia_xx>0.0928615115607151</inertia_xx>
+					<inertia_yy>0.0928615115607151</inertia_yy>
+					<inertia_zz>0.0564359177555652</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="ground_pelvis">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>ground</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="pelvis_tilt">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_list">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_rotation">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_tx">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-5 5</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_ty">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0.93</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1 2</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_tz">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-3 3</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_tilt</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_list</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_rotation</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_tx</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_ty</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>pelvis_tz</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>r_pelvis.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>l_pelvis.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>sacrum.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.18716 1.05886 1.06248</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects>
+							<WrapCylinder name="Gmax1_at_pelvis_r">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> -0.6 0.45 0</xyz_body_rotation>
+								<translation> -0.0914107 -0.104827 0.0648113</translation>
+								<active>true</active>
+								<quadrant>-x</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0.6 0.45 0 -0.0914107 -0.104827 0.0648113</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>4</display_preference>
+								</VisibleObject>
+								<radius>0.0444904789062116</radius>
+								<length>0.162951559388051</length>
+							</WrapCylinder>
+							<WrapCylinder name="Gmax2_at_pelvis_r">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> -0.75 0.39 0</xyz_body_rotation>
+								<translation> -0.0949722 -0.0878851 0.0722486</translation>
+								<active>true</active>
+								<quadrant>all</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0.75 0.39 0 -0.0949722 -0.0878851 0.0722486</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0446080308525042</radius>
+								<length>0.108003499707994</length>
+							</WrapCylinder>
+							<WrapCylinder name="Gmax3_at_pelvis_r">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> -0.1 0 0</xyz_body_rotation>
+								<translation> -0.0985337 -0.0931793 0.0722486</translation>
+								<active>true</active>
+								<quadrant>all</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0.1 0 0 -0.0985337 -0.0931793 0.0722486</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0449209504820656</radius>
+								<length>0.106244373376755</length>
+							</WrapCylinder>
+							<WrapCylinder name="Gmax1_at_pelvis_l">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> 0.6 -0.45 0</xyz_body_rotation>
+								<translation> -0.0914107 -0.104827 -0.0648113</translation>
+								<active>true</active>
+								<quadrant>-x</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> 0.6 -0.45 0 -0.0914107 -0.104827 -0.0648113</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0444904789062116</radius>
+								<length>0.162951559388051</length>
+							</WrapCylinder>
+							<WrapCylinder name="Gmax2_at_pelvis_l">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> 0.75 -0.39 0</xyz_body_rotation>
+								<translation> -0.0949722 -0.0878851 -0.0722486</translation>
+								<active>true</active>
+								<quadrant>all</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> 0.75 -0.39 0 -0.0949722 -0.0878851 -0.0722486</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0446080308525042</radius>
+								<length>0.108003499707994</length>
+							</WrapCylinder>
+							<WrapCylinder name="Gmax3_at_pelvis_l">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> 0.1 0 0</xyz_body_rotation>
+								<translation> -0.0985337 -0.0931793 -0.0722486</translation>
+								<active>true</active>
+								<quadrant>all</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> 0.1 0 0 -0.0985337 -0.0931793 -0.0722486</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0449209504820656</radius>
+								<length>0.106244373376755</length>
+							</WrapCylinder>
+							<WrapCylinder name="PS_at_brim_r">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> -0.25 -0.27 0.1</xyz_body_rotation>
+								<translation> -0.0878493 -0.0635314 0.0696987</translation>
+								<active>true</active>
+								<quadrant>-y</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0.25 -0.27 0.1 -0.0878493 -0.0635314 0.0696987</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0559489920961312</radius>
+								<length>0.107168164986015</length>
+							</WrapCylinder>
+							<WrapCylinder name="PS_at_brim_l">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> 0.25 0.27 0.1</xyz_body_rotation>
+								<translation> -0.0878493 -0.0635314 -0.0696987</translation>
+								<active>true</active>
+								<quadrant>-y</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> 0.25 0.27 0.1 -0.0878493 -0.0635314 -0.0696987</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0559489920961312</radius>
+								<length>0.107168164986015</length>
+							</WrapCylinder>
+							<WrapCylinder name="IL_at_brim_r">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> -0.32 -0.24 0.9</xyz_body_rotation>
+								<translation> -0.0842878 -0.0688256 0.0803235</translation>
+								<active>true</active>
+								<quadrant>-y</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0.32 -0.24 0.9 -0.0842878 -0.0688256 0.0803235</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0615656070151819</radius>
+								<length>0.106961964372542</length>
+							</WrapCylinder>
+							<WrapCylinder name="IL_at_brim_l">
+								<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+								<display_preference>0</display_preference>
+								<xyz_body_rotation> 0.32 0.24 0.9</xyz_body_rotation>
+								<translation> -0.0842878 -0.0688256 -0.0803235</translation>
+								<active>true</active>
+								<quadrant>-y</quadrant>
+								<VisibleObject>
+									<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+									<GeometrySet>
+										<objects />
+										<groups />
+									</GeometrySet>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> 0.32 0.24 0.9 -0.0842878 -0.0688256 -0.0803235</transform>
+									<!--Whether to show a coordinate frame-->
+									<show_axes>false</show_axes>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+									<display_preference>0</display_preference>
+								</VisibleObject>
+								<radius>0.0615656070151819</radius>
+								<length>0.106961964372542</length>
+							</WrapCylinder>
+						</objects>
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="femur_r">
+					<mass>7.21243044558004</mass>
+					<mass_center> 0 -0.174042 0</mass_center>
+					<inertia_xx>0.106961443500494</inertia_xx>
+					<inertia_yy>0.0248019089402665</inertia_yy>
+					<inertia_zz>0.106961443500494</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="hip_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>pelvis</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0839316811838204 -0.0699904301259594 0.0887170669956584</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="hip_flexion_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_adduction_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_rotation_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_flexion_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_adduction_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_rotation_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.1871524919918</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.05885673412949</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06247984425938</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>femur_r.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 0.954602 1.02378 0.954602</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="patella_r">
+					<mass>0.0668406373673855</mass>
+					<mass_center> 0.00169004 0.0265834 0</mass_center>
+					<inertia_xx>2.10400671426872e-006</inertia_xx>
+					<inertia_yy>9.03267511933003e-006</inertia_yy>
+					<inertia_zz>9.03267511933003e-006</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="patellofemoral_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_beta">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-99999.9 99999.9</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<SimmSpline name="f11">
+											<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+											<y> 0.00113686 -0.00629212 -0.105582 -0.253683 -0.414245 -0.579047 -0.747244 -0.91799 -1.09044 -1.26379 -1.43763 -1.61186 -1.78634</y>
+										</SimmSpline>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline name="f9">
+													<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+													<y> 0.04435 0.040692 0.035581 0.029012 0.021473 0.013523 0.005483 -0.002412 -0.009959 -0.016903 -0.022926 -0.027739 -0.030815</y>
+												</SimmSpline>
+											</function>
+											<scale>0.954601995223642</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline name="f10">
+													<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+													<y> -0.418712 -0.426965 -0.43422 -0.440152 -0.444617 -0.447495 -0.448724 -0.448337 -0.446353 -0.442826 -0.438035 -0.432448 -0.426632</y>
+												</SimmSpline>
+											</function>
+											<scale>1.02377613740657</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.954601995223642</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>r_patella.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 0.938911 1.00695 0.938911</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="tibia_r">
+					<mass>2.87484527888146</mass>
+					<mass_center> 0 -0.216261 0</mass_center>
+					<inertia_xx>0.0515730503873518</inertia_xx>
+					<inertia_yy>0.00358030761982867</inertia_yy>
+					<inertia_zz>0.0515730503873518</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="knee_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 0.17453293</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline>
+													<x> -2.0944 -1.74533 -1.39626 -1.0472 -0.698132 -0.349066 -0.174533 0.197344 0.337395 0.490178 1.52146 2.0944</x>
+													<y> -0.0032 0.00179 0.00411 0.0041 0.00212 -0.001 -0.0031 -0.005227 -0.005435 -0.005574 -0.005435 -0.00525</y>
+												</SimmSpline>
+											</function>
+											<scale>0.954601995223642</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline>
+													<x> -2.0944 -1.22173 -0.523599 -0.349066 -0.174533 0.159149 2.0944</x>
+													<y> -0.4226 -0.4082 -0.399 -0.3976 -0.3966 -0.395264 -0.396</y>
+												</SimmSpline>
+											</function>
+											<scale>1.02377613740657</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.954601995223642</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>tibia_r.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>fibula_r.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 0.951502 1.15833 0.951502</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="talus_r">
+					<mass>0.0775413426535795</mass>
+					<mass_center> 0 0 0</mass_center>
+					<inertia_xx>0.00107305942319018</inertia_xx>
+					<inertia_yy>0.000872227512315306</inertia_yy>
+					<inertia_zz>0.00107305942319018</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="ankle_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>tibia_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 -0.498082068824491 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="ankle_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>ankle_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-0.10501355 -0.17402245 0.97912632</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.97912632 -0 0.10501355</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.951499194593221</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.1583303926151</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.951499194593221</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>talus_rv.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.09302 1.09302 1.14351</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="calcn_r">
+					<mass>0.969266783169743</mass>
+					<mass_center> 0.109302 0.0327905 0</mass_center>
+					<inertia_xx>0.00135684087572057</inertia_xx>
+					<inertia_yy>0.00364282793013755</inertia_yy>
+					<inertia_zz>0.00364282793013755</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="subtalar_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>talus_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0533064865802546 -0.0458521039992143 0.0090566053657627</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="subtalar_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>true</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>subtalar_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.78717961 0.60474746 -0.12094949</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-0.12094949 0 -0.78717961</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.09301797375958</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.09301797375958</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.1435107785054</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>foot.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.09302 1.09302 1.14351</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="toes_r">
+					<mass>0.167954548187653</mass>
+					<mass_center> 0.0378184 0.0065581 -0.0200115</mass_center>
+					<inertia_xx>9.69172054086127e-005</inertia_xx>
+					<inertia_yy>0.000187415203904803</inertia_yy>
+					<inertia_zz>0.000187415203904803</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="mtp_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>calcn_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0.195431613708212 -0.00218603594751915 0.00123499164078583</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="mtp_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>true</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>mtp_angle_r</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-0.5809544 0 0.81393611</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.81393611 -0 0.5809544</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.09301797375958</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.09301797375958</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.1435107785054</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>bofoot.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.09302 1.09302 1.14351</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="femur_l">
+					<mass>7.21243044558004</mass>
+					<mass_center> 0 -0.180067 0</mass_center>
+					<inertia_xx>0.11479710778498</inertia_xx>
+					<inertia_yy>0.0271514604764443</inertia_yy>
+					<inertia_zz>0.11479710778498</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="hip_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>pelvis</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0839316811838204 -0.0699904301259594 -0.0887170669956584</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="hip_flexion_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_adduction_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_rotation_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_flexion_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_adduction_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>hip_rotation_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 -1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.1871524919918</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.05885673412949</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06247984425938</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>femur_l.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 0.998795 1.05922 0.998795</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="patella_l">
+					<mass>0.0668406373673855</mass>
+					<mass_center> 0.00179999 0.0279969 0</mass_center>
+					<inertia_xx>2.3600370246561e-006</inertia_xx>
+					<inertia_yy>1.02328392429353e-005</inertia_yy>
+					<inertia_zz>1.02328392429353e-005</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="patellofemoral_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_l_beta">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-99999.9 99999.9</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<SimmSpline name="f25">
+											<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+											<y> 0.00113686 -0.00629212 -0.105582 -0.253683 -0.414245 -0.579047 -0.747244 -0.91799 -1.09044 -1.26379 -1.43763 -1.61186 -1.78634</y>
+										</SimmSpline>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline name="f23">
+													<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+													<y> 0.04435 0.040692 0.035581 0.029012 0.021473 0.013523 0.005483 -0.002412 -0.009959 -0.016903 -0.022926 -0.027739 -0.030815</y>
+												</SimmSpline>
+											</function>
+											<scale>0.998795049337844</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l_beta</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline name="f24">
+													<x> 0 0.174533 0.349066 0.523599 0.698132 0.872665 1.0472 1.22173 1.39626 1.5708 1.74533 1.91986 2.0944</x>
+													<y> -0.418712 -0.426965 -0.43422 -0.440152 -0.444617 -0.447495 -0.448724 -0.448337 -0.446353 -0.442826 -0.438035 -0.432448 -0.426632</y>
+												</SimmSpline>
+											</function>
+											<scale>1.05922023686937</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.998795049337844</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>l_patella.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 0.999993 1.06049 0.999993</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="tibia_l">
+					<mass>2.87484527888146</mass>
+					<mass_center> 0 -0.210146 0</mass_center>
+					<inertia_xx>0.0490175803331509</inertia_xx>
+					<inertia_yy>0.00402006657115773</inertia_yy>
+					<inertia_zz>0.0490175803331509</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="knee_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 0.17453293</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline>
+													<x> -2.0944 -1.74533 -1.39626 -1.0472 -0.698132 -0.349066 -0.174533 0.197344 0.337395 0.490178 1.52146 2.0944</x>
+													<y> -0.0032 0.00179 0.00411 0.0041 0.00212 -0.001 -0.0031 -0.005227 -0.005435 -0.005574 -0.005435 -0.00525</y>
+												</SimmSpline>
+											</function>
+											<scale>0.998795049337844</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>knee_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<SimmSpline>
+													<x> -2.0944 -1.22173 -0.523599 -0.349066 -0.174533 0.159149 2.0944</x>
+													<y> -0.4226 -0.4082 -0.399 -0.3976 -0.3966 -0.395264 -0.396</y>
+												</SimmSpline>
+											</function>
+											<scale>1.05922023686937</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>0.998795049337844</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>tibia_l.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>fibula_l.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.00824 1.12558 1.00824</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="talus_l">
+					<mass>0.0775413426535795</mass>
+					<mass_center> 0 0 0</mass_center>
+					<inertia_xx>0.000977416623082482</inertia_xx>
+					<inertia_yy>0.000821415571881724</inertia_yy>
+					<inertia_zz>0.000977416623082482</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="ankle_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>tibia_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 -0.483999174444916 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="ankle_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.04719755 1.04719755</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>ankle_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.10501355 0.17402245 0.97912632</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.97912632 0 -0.10501355</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.00824221204511</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.12557947545329</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.00824221204511</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>talus_lv.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.06306 1.06306 1.08526</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="calcn_l">
+					<mass>0.969266783169743</mass>
+					<mass_center> 0.106306 0.0318919 0</mass_center>
+					<inertia_xx>0.00125243584572951</inertia_xx>
+					<inertia_yy>0.00343036956463789</inertia_yy>
+					<inertia_zz>0.00343036956463789</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="subtalar_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>talus_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0518455941501126 -0.0445955028623585 -0.00859528374269111</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="subtalar_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>true</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>subtalar_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-0.78717961 -0.60474746 -0.12094949</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>-0.12094949 0 0.78717961</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06306323867363</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06306323867363</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.08526309882464</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>l_foot.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.06306 1.06306 1.08526</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+				<Body name="toes_l">
+					<mass>0.167954548187653</mass>
+					<mass_center> 0.036782 0.00637838 0.0189921</mass_center>
+					<inertia_xx>8.94597032663938e-005</inertia_xx>
+					<inertia_yy>0.000176174459841313</inertia_yy>
+					<inertia_zz>0.000176174459841313</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<CustomJoint name="mtp_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>calcn_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0.190075707074844 -0.00212612647734724 -0.00117208414673061</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="mtp_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.04719755 1.04719755</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>true</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>true</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
+							<SpatialTransform>
+								<!--3 Axes for rotations are listed first.-->
+								<TransformAxis name="rotation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates>mtp_angle_l</coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.5809544 0 0.81393611</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="rotation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0.81393611 0 -0.5809544</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<Constant>
+											<value>0</value>
+										</Constant>
+									</function>
+								</TransformAxis>
+								<!--3 Axes for translations are listed next.-->
+								<TransformAxis name="translation1">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>1 0 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06306323867363</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation2">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 1 0</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.06306323867363</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+								<TransformAxis name="translation3">
+									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
+									<coordinates></coordinates>
+									<!--Rotation or translation axis for the transform.-->
+									<axis>0 0 1</axis>
+									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
+									<function>
+										<MultiplierFunction>
+											<function>
+												<Constant>
+													<value>0</value>
+												</Constant>
+											</function>
+											<scale>1.08526309882464</scale>
+										</MultiplierFunction>
+									</function>
+								</TransformAxis>
+							</SpatialTransform>
+						</CustomJoint>
+					</Joint>
+					<VisibleObject>
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+						<GeometrySet>
+							<objects>
+								<DisplayGeometry>
+									<!--Name of geometry file .vtp, .stl, .obj-->
+									<geometry_file>l_bofoot.vtp</geometry_file>
+									<!--Color used to display the geometry when visible-->
+									<color> 1 1 1</color>
+									<!--Name of texture file .jpg, .bmp-->
+									<texture_file />
+									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+									<transform> -0 0 -0 0 0 0</transform>
+									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+									<scale_factors> 1 1 1</scale_factors>
+									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+									<display_preference>4</display_preference>
+									<!--Display opacity between 0.0 and 1.0-->
+									<opacity>1</opacity>
+								</DisplayGeometry>
+							</objects>
+							<groups />
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors> 1.06306 1.06306 1.08526</scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+						<transform> -0 0 -0 0 0 0</transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes>false</show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+						<display_preference>4</display_preference>
+					</VisibleObject>
+					<WrapObjectSet>
+						<objects />
+						<groups />
+					</WrapObjectSet>
+				</Body>
+			</objects>
+			<groups />
+		</BodySet>
+		<!--Constraints in the model.-->
+		<ConstraintSet>
+			<objects>
+					<CoordinateCouplerConstraint name="patellofemoral_knee_angle_con">
+					<!--Flag indicating whether the constraint is disabled or not. Disabled means that the constraint is not active in subsequent dynamics realization-->
+					<isDisabled>false</isDisabled>
+					<!--Constraint function of generalized coordinates (to be specified) used to evaluate the constraint errors and their derivatives, and must valid to at least 2nd order. Constraint function must evaluate to zero when coordinates satisfy constraint-->
+					<coupled_coordinates_function>
+						<LinearFunction>
+							<coefficients> -1 0</coefficients>
+						</LinearFunction>
+					</coupled_coordinates_function>
+					<!--List of names of the independent coordinates (restricted to 1 for now).-->
+					<independent_coordinate_names>knee_angle_r</independent_coordinate_names>
+					<!--Name of the dependent coordinate.-->
+					<dependent_coordinate_name>knee_angle_beta</dependent_coordinate_name>
+					<!--Scale factor for the function.-->
+					<scale_factor>1</scale_factor>
+				</CoordinateCouplerConstraint>
+				<CoordinateCouplerConstraint name="patellofemoral_knee_angle_l_con">
+					<!--Flag indicating whether the constraint is disabled or not. Disabled means that the constraint is not active in subsequent dynamics realization-->
+					<isDisabled>false</isDisabled>
+					<!--Constraint function of generalized coordinates (to be specified) used to evaluate the constraint errors and their derivatives, and must valid to at least 2nd order. Constraint function must evaluate to zero when coordinates satisfy constraint-->
+					<coupled_coordinates_function>
+						<LinearFunction>
+							<coefficients> -1 0</coefficients>
+						</LinearFunction>
+					</coupled_coordinates_function>
+					<!--List of names of the independent coordinates (restricted to 1 for now).-->
+					<independent_coordinate_names>knee_angle_l</independent_coordinate_names>
+					<!--Name of the dependent coordinate.-->
+					<dependent_coordinate_name>knee_angle_l_beta</dependent_coordinate_name>
+					<!--Scale factor for the function.-->
+					<scale_factor>1</scale_factor>
+				</CoordinateCouplerConstraint>
+			</objects>
+			<groups />
+		</ConstraintSet>
+		<!--Forces in the model.-->
+		<ForceSet>
+			<objects>
+			</objects>
+			<groups />
+		</ForceSet>
+		<!--Markers in the model.-->
+		<MarkerSet>
+			<objects>
+				<Marker name="EASD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>pelvis</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0114693 0.0130399 0.132753</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="EASG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>pelvis</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0132302 0.0146477 -0.137337</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="EPSD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>pelvis</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.191917 0.0548005 0.0441933</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="EPSG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>pelvis</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.179355 0.0502688 -0.0470985</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CMD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.00761381 -0.422606 -0.0468932</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CLD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.00258303 -0.424943 0.0442685</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CMG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0106695 -0.427207 0.0522992</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CLG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.00246231 -0.428077 -0.0485339</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MMD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0303775 -0.445859 -0.0338619</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MMG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0252118 -0.433274 0.0342144</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MLD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.00616482 -0.474718 0.0488061</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MLG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.013045 -0.461614 -0.0576067</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CALG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0699684 -0.0329898 0.0190267</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="CALD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0777949 -0.0324182 0.00359243</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MT1G">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.180797 -0.032728 0.00951282</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MT5D">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.107789 -0.0309593 0.0500963</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MT1D">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.151941 -0.0261675 -0.0209043</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FHAG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0457423 -0.176036 -0.118653</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FHPG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0270561 -0.187112 -0.11771</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FBAG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0509557 -0.266151 -0.102403</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FBPG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0240894 -0.269606 -0.101969</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FHAD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0446464 -0.16085 0.0911197</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FHPD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0505159 -0.150861 0.094535</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FBAD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0393374 -0.249912 0.0816021</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="FBPD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>femur_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0102688 -0.228013 0.084809</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MT5G">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.168812 -0.037072 -0.0733264</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MTCALG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0525346 0.000323125 0.0144176</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MTCALD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>talus_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0612536 -5.4987e-005 0.00628009</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="MTBassin">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>pelvis</body>
+					<!--Location of a marker on the body segment.-->
+					<location> -0.0449622 0.113768 0.157943</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="TFIBD">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_r</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.00476158 -0.0859125 0.0498361</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+				<Marker name="TFIBG">
+					<!--Body segment in the model on which the marker resides.-->
+					<body>tibia_l</body>
+					<!--Location of a marker on the body segment.-->
+					<location> 0.0015902 -0.0772158 -0.0537922</location>
+					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
+					<fixed>false</fixed>
+				</Marker>
+			</objects>
+			<groups />
+		</MarkerSet>
+		<!--ContactGeometries  in the model.-->
+		<ContactGeometrySet>
+			<objects />
+			<groups />
+		</ContactGeometrySet>
+		<!--Controllers in the model.-->
+		<ControllerSet name="Controllers">
+			<objects />
+			<groups />
+		</ControllerSet>
+		<!--Additional components in the model.-->
+		<ComponentSet name="MiscComponents">
+			<objects />
+			<groups />
+		</ComponentSet>
+		<!--Probes in the model.-->
+		<ProbeSet>
+			<objects />
+			<groups />
+		</ProbeSet>
+	</Model>
+</OpenSimDocument>

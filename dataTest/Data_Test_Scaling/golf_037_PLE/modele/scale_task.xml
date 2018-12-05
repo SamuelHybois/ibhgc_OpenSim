@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<IKTaskSet name="scale_task">
+	<objects>
+		<IKMarkerTask name="MAN">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="XYP">
+			<apply>true</apply>
+			<weight>5</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="COTG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="COTD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="C7">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="T8">
+			<apply>true</apply>
+			<weight>2</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="T12">
+			<apply>true</apply>
+			<weight>2</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EASG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EPSG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EPSD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EASD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTBassin">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="L5">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CLG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CMG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FHAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FHPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FBPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FBAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTTIBG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TFIBG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MLG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MMG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="THAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="THPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TBAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TBPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CALG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MT1G">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTCALG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MT5G">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CLD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CMD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FHAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FHPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FBPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="FBAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TFIBD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MLD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MMD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="THAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="THPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TBAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TBPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CALD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MT1D">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTCALD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MT5D">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CLAVD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="ACD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BHAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BHPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BBAD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BBPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="ELD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EMD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PSUD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PSRD">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MC2D">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MC5D">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTRD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="CLAVG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="ACG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BHAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BHPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BBAG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="BBPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="ELG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="EMG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTRG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PSUG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PSRG">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MC2G">
+			<apply>true</apply>
+			<weight>10</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MC5G">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="MTTETE">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="OCCG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="OCCD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TMPD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="TMPG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPDL">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPDH">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPDB">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPGL">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPGH">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="SCAPGB">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PATD">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+		<IKMarkerTask name="PATG">
+			<apply>true</apply>
+			<weight>0</weight>
+		</IKMarkerTask>
+	</objects>
+	<groups />
+</IKTaskSet>

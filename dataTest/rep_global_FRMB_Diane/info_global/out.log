@@ -1,0 +1,191 @@
+Loaded library osimScapulothoracicJointPlugin_33_vc12x64
+reading object from file [Tennis_ScapLoc_scaling_2_measure_set.xml] cwd =E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele
+reading object from file [Tennis_ScapLoc_scaling_2_task.xml] cwd =E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele
+Processing subject AM02SH_scaled
+
+Step 1: Loading generic model
+Loaded model AM02SH_scaled from file E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\AM02SH_Tennis_ScapLoc_model_ellipsoid.osim
+Model unable to assemble: AssemblySolver::assemble() Failed: SimTK Exception thrown at Assembler.cpp:897:
+  Method Assembler::assemble() failed because:
+Unabled to achieve required assembly error tolerance.
+Assembly error tolerance achieved: 1.27053401133281e-009 required: 1e-009.
+Model relaxing constraints and trying again.
+Model unable to assemble: AssemblySolver::assemble() Failed: SimTK Exception thrown at Assembler.cpp:897:
+  Method Assembler::assemble() failed because:
+Unabled to achieve required assembly error tolerance.
+Assembly error tolerance achieved: 1.27053401133281e-009 required: 1e-009.
+Model relaxing constraints and trying again.
+
+Step 2: Scaling generic model
+Loaded marker file E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\..\Statique\Static_B_ref.trc (59 markers, 240 frames)
+Measurement 'thoraxX'
+	pair 0 (XYP, T8): model = 0.242941, experimental = 0.263046
+	pair 1 (MAN, XYP): model = 0.204145, experimental = 0.187249
+	overall scale factor = 0.999999
+Measurement 'thoraxY'
+	pair 0 (XYP, T8): model = 0.242941, experimental = 0.263046
+	pair 1 (MAN, XYP): model = 0.204145, experimental = 0.187249
+	overall scale factor = 0.999999
+Measurement 'thoraxZ'
+	pair 0 (XYP, T8): model = 0.242941, experimental = 0.263046
+	pair 1 (MAN, XYP): model = 0.204145, experimental = 0.187249
+	overall scale factor = 0.999999
+Measurement 'humerus_rX'
+	pair 0 (EMD, ELD): model = 0.0806276, experimental = 0.0768869
+	pair 1 (ACD, ELD): model = 0.298497, experimental = 0.310951
+	overall scale factor = 0.997663
+Measurement 'humerus_rY'
+	pair 0 (EMD, ELD): model = 0.0806276, experimental = 0.0768869
+	pair 1 (ACD, ELD): model = 0.298497, experimental = 0.310951
+	overall scale factor = 0.997663
+Measurement 'humerus_rZ'
+	pair 0 (EMD, ELD): model = 0.0806276, experimental = 0.0768869
+	pair 1 (ACD, ELD): model = 0.298497, experimental = 0.310951
+	overall scale factor = 0.997663
+Measurement 'humerus_lX'
+	pair 0 (EMG, ELG): model = 0.0759076, experimental = 0.0772723
+	pair 1 (ACG, ELG): model = 0.314339, experimental = 0.30777
+	overall scale factor = 0.998541
+Measurement 'humerus_lY'
+	pair 0 (EMG, ELG): model = 0.0759076, experimental = 0.0772723
+	pair 1 (ACG, ELG): model = 0.314339, experimental = 0.30777
+	overall scale factor = 0.998541
+Measurement 'humerus_lZ'
+	pair 0 (EMG, ELG): model = 0.0759076, experimental = 0.0772723
+	pair 1 (ACG, ELG): model = 0.314339, experimental = 0.30777
+	overall scale factor = 0.998541
+Measurement 'ulna_rX'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (EMD, PSUD): model = 0.258908, experimental = 0.264117
+	overall scale factor = 0.994919
+Measurement 'ulna_rY'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (EMD, PSUD): model = 0.258908, experimental = 0.264117
+	overall scale factor = 0.994919
+Measurement 'ulna_rZ'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (EMD, PSUD): model = 0.258908, experimental = 0.264117
+	overall scale factor = 0.994919
+Measurement 'ulna_lX'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (EMG, PSUG): model = 0.252634, experimental = 0.262302
+	overall scale factor = 0.996011
+Measurement 'ulna_lY'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (EMG, PSUG): model = 0.252634, experimental = 0.262302
+	overall scale factor = 0.996011
+Measurement 'ulna_lZ'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (EMG, PSUG): model = 0.252634, experimental = 0.262302
+	overall scale factor = 0.996011
+Measurement 'radius_rX'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (ELD, PSRD): model = 0.258849, experimental = 0.266675
+	overall scale factor = 0.999979
+Measurement 'radius_rY'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (ELD, PSRD): model = 0.258849, experimental = 0.266675
+	overall scale factor = 0.999979
+Measurement 'radius_rZ'
+	pair 0 (PSUD, PSRD): model = 0.0821939, experimental = 0.0797052
+	pair 1 (ELD, PSRD): model = 0.258849, experimental = 0.266675
+	overall scale factor = 0.999979
+Measurement 'radius_lX'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (ELG, PSRG): model = 0.249254, experimental = 0.260934
+	overall scale factor = 1.0003
+Measurement 'radius_lY'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (ELG, PSRG): model = 0.249254, experimental = 0.260934
+	overall scale factor = 1.0003
+Measurement 'radius_lZ'
+	pair 0 (PSUG, PSRG): model = 0.0789753, experimental = 0.0753228
+	pair 1 (ELG, PSRG): model = 0.249254, experimental = 0.260934
+	overall scale factor = 1.0003
+Measurement 'scapula_rX'
+	pair 0 (TSD, AAD): model = 0.144484, experimental = 0.143431
+	pair 1 (TSD, AID): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'scapula_rY'
+	pair 0 (TSD, AAD): model = 0.144484, experimental = 0.143431
+	pair 1 (TSD, AID): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'scapula_rZ'
+	pair 0 (TSD, AAD): model = 0.144484, experimental = 0.143431
+	pair 1 (TSD, AID): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'scapula_lX'
+	pair 0 (TSG, AAG): model = 0.144484, experimental = 0.143431
+	pair 1 (TSG, AIG): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'scapula_lY'
+	pair 0 (TSG, AAG): model = 0.144484, experimental = 0.143431
+	pair 1 (TSG, AIG): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'scapula_lZ'
+	pair 0 (TSG, AAG): model = 0.144484, experimental = 0.143431
+	pair 1 (TSG, AIG): model = 0.096914, experimental = 0.0976198
+	overall scale factor = 0.999999
+Measurement 'clavicle_rX'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'clavicle_rY'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'clavicle_rZ'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'clavicle_lX'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'clavicle_lY'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'clavicle_lZ'
+	pair 0 (ACD, MAN): model = 0.155285, experimental = 0.212519
+	pair 1 (ACG, MAN): model = 0.223893, experimental = 0.207972
+	overall scale factor = 1.14873
+Measurement 'hand_rX'
+	pair 0 (MC5D, MC2D): model = 0.0795265, experimental = 0.0795264
+	overall scale factor = 0.999999
+Measurement 'hand_rY'
+	pair 0 (MC5D, MC2D): model = 0.0795265, experimental = 0.0795264
+	overall scale factor = 0.999999
+Measurement 'hand_rZ'
+	pair 0 (MC5D, MC2D): model = 0.0795265, experimental = 0.0795264
+	overall scale factor = 0.999999
+Measurement 'hand_lX'
+	pair 0 (MC5G, MC2G): model = 0.0647848, experimental = 0.0647847
+	overall scale factor = 1
+Measurement 'hand_lY'
+	pair 0 (MC5G, MC2G): model = 0.0647848, experimental = 0.0647847
+	overall scale factor = 1
+Measurement 'hand_lZ'
+	pair 0 (MC5G, MC2G): model = 0.0647848, experimental = 0.0647847
+	overall scale factor = 1
+Model unable to assemble: AssemblySolver::assemble() Failed: SimTK Exception thrown at Assembler.cpp:897:
+  Method Assembler::assemble() failed because:
+Unabled to achieve required assembly error tolerance.
+Assembly error tolerance achieved: 1.27053464971105e-009 required: 1e-009.
+Model relaxing constraints and trying again.
+Wrote model file AM02SH_Tennis_ScapLoc_model_scaling_2_step1.osim from model AM02SH_scaled
+Wrote scale file AM02SH_Tennis_ScapLoc_scaling_2_output.xml for model AM02SH_scaled
+Model unable to assemble: AssemblySolver::assemble() Failed: SimTK Exception thrown at Assembler.cpp:897:
+  Method Assembler::assemble() failed because:
+Unabled to achieve required assembly error tolerance.
+Assembly error tolerance achieved: 1.27053464971105e-009 required: 1e-009.
+Model relaxing constraints and trying again.
+
+Step 3: Placing markers on model
+Loaded marker file E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\..\Statique\Static_B_ref.trc (59 markers, 240 frames)
+Averaged frames from time 0.01 to 2.4 in E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\..\Statique\Static_B_ref.trc (frames 1 to 240)
+Deleted 0 unused markers from model AM02SH_scaled
+Frame at (t=0):	total squared error = 0.417851, marker error: RMS=0.0896415, max=0.275992 (COSTALG)
+Moved markers in model AM02SH_scaled to match locations in marker file E:\PostDoc_ENSAM\OpenSim\pipelineOpenSim\OS_Pipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\..\Statique\Static_B_ref.trc
+Wrote model file AM02SH_Tennis_ScapLoc_model_scaling_2_final.osim from model AM02SH_scaled
+Wrote marker file AM02SH_Tennis_ScapLoc_marqueurs_new_output.osim from model AM02SH_scaled

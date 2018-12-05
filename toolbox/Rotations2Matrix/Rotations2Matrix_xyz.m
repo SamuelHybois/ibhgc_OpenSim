@@ -1,0 +1,19 @@
+function [R1,R2,R3] = Rotations2Matrix_xyz(ax,ay,az)
+
+Rot_X = [[1,0,0]',...
+[0,cos(ax),sin(ax)]',...
+[0,-sin(ax),cos(ax)]'];
+
+Rot_Y = [[cos(ay),0,-sin(ay)]',...
+  [0,1,0]',...
+ [sin(ay),0,cos(ay)]'];
+
+Rot_Z = [[cos(az),sin(az),0]',...
+[-sin(az),cos(az),0]',...
+[0,0,1]'];            
+            
+R1=Rot_X;
+R2=Rot_Y;
+R3=Rot_Z;
+
+end%function

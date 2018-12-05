@@ -1,0 +1,9 @@
+function Mrot = Mrot_rotation_axe_angle(coord_axe,angle)
+    ux = coord_axe(1);
+    uy = coord_axe(2);
+    uz = coord_axe(3);
+    theta = angle; % en degrés
+    P = [ux,uy,uz]' * [ux,uy,uz];
+    I = eye(3,3);
+    Q = [0,-uz,uy;uz,0,-ux;-uy,ux,0];
+    Mrot = P + cosd(theta)*(I-P) + sind(theta)*Q;

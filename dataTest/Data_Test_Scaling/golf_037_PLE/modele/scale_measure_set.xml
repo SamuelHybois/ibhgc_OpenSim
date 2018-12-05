@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--Body segments are scaled by calculating the average distance between
+specified marker pairs.  The ratio between the averaged distance to the 
+distance in the generic model is then used to scale each specified segment 
+in the specified axis directions (e.g., X Y Z).-->
+<MeasurementSet name="scale_measure_set">
+	<objects>
+		<Measurement name="pelvisX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD EASD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG EASG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="pelvis">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="pelvisY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD EASG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSD EPSG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="pelvis">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="pelvisZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD EASG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSD EPSG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="pelvis">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="sacrumX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD EASD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG EASG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="sacrum">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="sacrumY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD EASG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSD EPSG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="sacrum">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="sacrumZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD EASG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSD EPSG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="sacrum">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLD CMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD CMD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EASD CLD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLD CMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLD CMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASD CMD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EASD CLD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLD CMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MLD MMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CMD MMD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> CLD MLD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MLD MMD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALD MT1D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLG CMG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASG CMG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EASG CLG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="femur_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CLG CMG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="femur_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CMG CLG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EASG CMG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EASG CLG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="patella_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CMG CLG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="patella_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MLG MMG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CMG MMG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> CLG MLG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="tibia_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MLG MMG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="tibia_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="talus_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="talus_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="calcn_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="calcn_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> CALG MT1G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="toes_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> MT1D MT5D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="toes_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar5X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar5">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar5Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD T12</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar5">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar5Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar5">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar4X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar4">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar4Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD T12</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar4">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar4Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar4">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar3X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar3">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar3Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD T12</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar3">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar3Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar3">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar2X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar2">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar2Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD T12</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar2">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar2Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar2">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar1X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar1">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar1Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EPSD T12</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> EPSG T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar1">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="lumbar1Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="lumbar1">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="thoraxX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="thorax">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="thoraxY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="thorax">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="thoraxZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="thorax">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_1X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_1">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_1Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_1">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_1Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_1">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_2X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_2">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_2Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_2">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_2Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_2">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_3X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_3">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_3Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_3">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_3Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_3">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_4X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_4">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_4Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_4">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_4Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_4">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_5X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_5">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_5Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_5">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_5Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_5">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_6X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_6">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_6Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_6">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_6Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_6">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_7X">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_7">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_7Y">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_7">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="cerv_7Z">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="cerv_7">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="clavicle_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="clavicle_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> T8 XYP</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> C7 T12</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="scapula_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="scapula_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="headX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> OCCD OCCG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> TMPD TMPG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="head">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="headY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> OCCD OCCG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> TMPD TMPG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="head">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="headZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="head">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="jawX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> OCCD OCCG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> TMPD TMPG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="jaw">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="jawY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> OCCD OCCG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> TMPD TMPG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="jaw">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="jawZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ACD ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="jaw">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMD ELD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ELD ACD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMD ELD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMD PSUD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> ELD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMD PSUD</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> ELD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUD PSRD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_rX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRD PSUD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_r">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_rY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRD MC2D</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_r">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_rZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRD PSUD</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_r">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMG ELG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> ELG ACG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="humerus_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMG ELG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="humerus_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMG PSUG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> ELG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="ulna_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="ulna_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> EMG PSUG</markers>
+					</MarkerPair>
+					<MarkerPair>
+						<markers> ELG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="radius_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSUG PSRG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="radius_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_lX">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRG PSUG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_l">
+						<axes> X</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_lY">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRG MC2G</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_l">
+						<axes> Y</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+		<Measurement name="hand_lZ">
+			<apply>true</apply>
+			<MarkerPairSet>
+				<objects>
+					<MarkerPair>
+						<markers> PSRG PSUG</markers>
+					</MarkerPair>
+				</objects>
+			<groups />
+			</MarkerPairSet>
+		<BodyScaleSet>
+				<objects>
+					<BodyScale name="hand_l">
+						<axes> Z</axes>
+					</BodyScale>
+				</objects>
+				<groups />
+			</BodyScaleSet>
+		</Measurement>
+	</objects>
+	<groups />
+</MeasurementSet>

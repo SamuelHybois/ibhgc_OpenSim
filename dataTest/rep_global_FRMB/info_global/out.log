@@ -1,0 +1,23 @@
+Loaded library osimScapulothoracicJointPlugin_33_vc12x64
+Constructing tool from setup file C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\Prop_ScapLoc\Prop_R_F_01_part1_ANALYZE\Prop_R_F_01_part1_Setup_ANALYZE.xml.
+
+AbstractTool AM02SH_model_final loading model 'C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\modele\AM02SH_model_final.osim'
+Loaded model AM02SH_scaled from file C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\modele\AM02SH_model_final.osim
+-----------------------------------------------------------------------
+Loaded library
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+No external loads will be applied (external loads file not specified).
+
+Loading coordinates from file C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\Prop_ScapLoc\Prop_R_F_01_part1_ik_lisse.mot.
+Storage: file=C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\Prop_ScapLoc\Prop_R_F_01_part1_ik_lisse.mot (nr=83 nc=33)
+
+
+Low-pass filtering coordinates data with a cutoff frequency of 6...
+
+Found 165 state vectors with time stamps ranging from 0.48 to 2.12.
+Executing the analyses from 0.89 to 1.71...
+Printing results of investigation AM02SH_model_final to C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\Prop_ScapLoc\Prop_R_F_01_part1_ANALYZE.
+Analyze compute time = 2949ms
+

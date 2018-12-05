@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<InverseKinematicsTool>
+		<!--Directory used for writing results.-->
+		<results_directory>./</results_directory>
+		<!--Directory for input files-->
+		<input_directory />
+		<!--Name of the .osim file used to construct a model.-->
+		<model_file>Unassigned</model_file>
+		<!--A positive scalar that is used to weight the importance of satisfying constraints.A weighting of 'Infinity' or if it is unassigned results in the constraints being strictly enforced.-->
+		<constraint_weight>Inf</constraint_weight>
+		<!--The accuracy of the solution in absolute terms. I.e. the number of significantdigits to which the solution can be trusted.-->
+		<accuracy>1e-005</accuracy>
+		<!--Markers and coordinates to be considered (tasks) and their weightings.-->
+		<IKTaskSet>
+			<objects>
+				<IKMarkerTask name="MTACGL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTACGM">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTACGB">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MAN">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="XYP">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="C7">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="T8">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="PSRG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="PSUG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="ELG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="EMG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="CLAVG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="CLAVD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="ELD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="EMD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="PSRD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="PSUD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MC2G">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MC5G">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MC5D">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MC2D">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="ACG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="ACD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTABD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTABG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBHAG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBHPG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBBAG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBBPG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBHAD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBHPD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBBAD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTBBPD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="COSTALD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="COSTALG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="AAG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="TSG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="AIG">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="AAD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="TSD">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="AID">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTACDL">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTACDM">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKMarkerTask name="MTACDB">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>false</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>1</weight>
+				</IKMarkerTask>
+				<IKCoordinateTask name="ground_thorax_rot_x">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="ground_thorax_rot_y">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="ground_thorax_rot_z">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="ground_thorax_tx">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="ground_thorax_ty">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="ground_thorax_tz">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="clav_prot_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="clav_elev_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_abduction_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_elevation_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_upward_rot_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_winging_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="shoulder_elv_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="plane_of_elev_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="axial_rot_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="elbow_flexion_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="pro_sup_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="wrist_flex_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="wrist_dev_r">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="clav_prot_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="clav_elev_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_abduction_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_elevation_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_upward_rot_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="scapula_winging_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="shoulder_elv_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="plane_of_elev_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="axial_rot_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="elbow_flexion_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="pro_sup_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="wrist_flex_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+				<IKCoordinateTask name="wrist_dev_l">
+					<!--Whether or not this task will be used during inverse kinematics solve.-->
+					<apply>true</apply>
+					<!--Weight given to a marker or coordinate for solving inverse kinematics problems.-->
+					<weight>0</weight>
+					<!--Indicates the source of the coordinate value for this task.  Possible values are default_value (use default value of coordinate, as specified in the model file, as the fixed target value), manual_value (use the value specified in the value property of this task as the fixed target value), or from_file (use the coordinate values from the coordinate data specified by the coordinates_file property).-->
+					<value_type>default_value</value_type>
+					<!--This value will be used as the desired (or prescribed) coordinate value if value_type is set to manual_value.-->
+					<value>0</value>
+				</IKCoordinateTask>
+			</objects>
+			<groups />
+		</IKTaskSet>
+		<!--TRC file (.trc) containing the time history of observations of marker positions.-->
+		<marker_file>Static_B_ref.trc</marker_file>
+		<!--The name of the storage (.sto or .mot) file containing coordinate observations.Coordinate values from this file are included if there is a corresponding coordinate task. -->
+		<coordinate_file>Unassigned</coordinate_file>
+		<!--Time range over which the inverse kinematics problem is solved.-->
+		<time_range> 0.01 2.4</time_range>
+		<!--Flag (true or false) indicating whether or not to report marker errors from the inverse kinematics solution.-->
+		<report_errors>true</report_errors>
+		<!--Name of the motion file (.mot) to which the results should be written.-->
+		<output_motion_file>Unassigned</output_motion_file>
+		<!--Flag indicating whether or not to report model marker locations in ground.-->
+		<report_marker_locations>false</report_marker_locations>
+	</InverseKinematicsTool>
+</OpenSimDocument>

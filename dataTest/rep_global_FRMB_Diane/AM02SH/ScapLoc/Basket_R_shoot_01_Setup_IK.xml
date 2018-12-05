@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <InverseKinematicsTool name="AM02SH_model_final">
+      <results_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\ScapLoc</results_directory>
+      <input_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\ScapLoc</input_directory>
+      <model_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\modele\AM02SH_model_final.osim</model_file>
+      <constraint_weight>100</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet file="Basket_R_shoot_01_ik_task.xml"/>
+      <marker_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\AM02SH\ScapLoc\Basket_R_shoot_01.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>0.88 2.69</time_range>
+      <report_marker_locations>true</report_marker_locations>
+      <report_errors>true</report_errors>
+      <output_motion_file>Basket_R_shoot_01_ik.mot</output_motion_file>
+   </InverseKinematicsTool>
+</OpenSimDocument>

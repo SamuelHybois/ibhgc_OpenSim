@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+<<<<<<< HEAD:dataTest/Data_Test_Scaling/golf_037_PLE/modele/statique_07_scaling_setup.xml
+	<ScaleTool name="golf_037_PLE_scaled">
+		<mass>78</mass>
+=======
+	<ScaleTool name="SA14AM_scaled">
+		<mass>3.210000e+01</mass>
+>>>>>>> dev_diane_ENSAM:dataTest/rep_global_FRMB/AM02SH/modele/Static_B_ref_scaling_setup.xml
+		<height>-1</height>
+		<age>-1</age>
+		<notes>Unassigned</notes>
+		<GenericModelMaker>
+			<model_file>IBHGC_fullbodyV7_golf_test_modif.osim</model_file>
+			<marker_set_file>Unassigned</marker_set_file>
+		</GenericModelMaker>
+		<ModelScaler>
+			<apply>true</apply>
+			<scaling_order> measurements</scaling_order>
+<MeasurementSet file="scale_measure_set.xml"/>
+			<ScaleSet>
+				<objects />
+				<groups />
+			</ScaleSet>
+<<<<<<< HEAD:dataTest/Data_Test_Scaling/golf_037_PLE/modele/statique_07_scaling_setup.xml
+			<marker_file>statique_07.trc</marker_file>
+			<time_range> 0.005 1.89 </time_range>
+			<preserve_mass_distribution>true</preserve_mass_distribution>
+			<output_model_file>golf_037_PLE_model_step1.osim</output_model_file>
+			<output_scale_file>golf_037_PLE_scale_output.xml</output_scale_file>
+=======
+			<marker_file>Static_B_ref.trc</marker_file>
+			<time_range> 0.01 2.25 </time_range>
+			<preserve_mass_distribution>true</preserve_mass_distribution>
+			<output_model_file>SA14AM_model_step1.osim</output_model_file>
+			<output_scale_file>SA14AM_scale_output.xml</output_scale_file>
+>>>>>>> dev_diane_ENSAM:dataTest/rep_global_FRMB/AM02SH/modele/Static_B_ref_scaling_setup.xml
+		</ModelScaler>
+		<MarkerPlacer>
+			<apply>true</apply>
+<IKTaskSet file="scale_task.xml"/>
+			<marker_file>statique_07.trc</marker_file>
+			<coordinate_file>Unassigned</coordinate_file>
+<<<<<<< HEAD:dataTest/Data_Test_Scaling/golf_037_PLE/modele/statique_07_scaling_setup.xml
+			<time_range> 0.005 1.89 </time_range>
+			<output_motion_file>golf_037_PLE_motion.mot</output_motion_file>
+			<output_model_file>golf_037_PLE_model_final.osim</output_model_file>
+			<output_marker_file>golf_037_PLE_marqueurs_new_output.osim</output_marker_file>
+=======
+			<time_range> 0.01 2.25 </time_range>
+			<output_motion_file>SA14AM_motion.mot</output_motion_file>
+			<output_model_file>SA14AM_model_final.osim</output_model_file>
+			<output_marker_file>SA14AM_marqueurs_new_output.osim</output_marker_file>
+>>>>>>> dev_diane_ENSAM:dataTest/rep_global_FRMB/AM02SH/modele/Static_B_ref_scaling_setup.xml
+			<max_marker_movement>-1</max_marker_movement>
+		</MarkerPlacer>
+	</ScaleTool>
+</OpenSimDocument>

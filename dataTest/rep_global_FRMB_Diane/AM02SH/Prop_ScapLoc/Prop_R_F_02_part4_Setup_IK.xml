@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="30000">
+   <InverseKinematicsTool name="AM02SH_model_final">
+      <results_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB_Diane\AM02SH\Prop_ScapLoc</results_directory>
+      <input_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB_Diane\AM02SH\Prop_ScapLoc</input_directory>
+      <model_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB_Diane\AM02SH\modele\AM02SH_model_final.osim</model_file>
+      <constraint_weight>100</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet file="Prop_R_F_02_part4_ik_task.xml"/>
+      <marker_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB_Diane\AM02SH\Prop_ScapLoc\Prop_R_F_02_part4.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>4.35 5.16</time_range>
+      <report_errors>true</report_errors>
+      <output_motion_file>Prop_R_F_02_part4_ik.mot</output_motion_file>
+      <report_marker_locations>true</report_marker_locations>
+   </InverseKinematicsTool>
+</OpenSimDocument>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="30000">
+	<ScaleSet name="ScaleSet">
+		<objects>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>ground</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00244 0.999999 0.999999</scales>
+				<segment>pelvis</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00244 0.999999 0.999999</scales>
+				<segment>sacrum</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999988 1.02234 0.999988</scales>
+				<segment>femur_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999988 1.02234 0.999988</scales>
+				<segment>patella_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.990563 0.994908 0.990563</scales>
+				<segment>tibia_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.996349 0.996349 1.0299</scales>
+				<segment>talus_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.996349 0.996349 1.0299</scales>
+				<segment>calcn_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.996349 0.996349 1.0299</scales>
+				<segment>toes_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999998 1.01763 0.999998</scales>
+				<segment>femur_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999998 1.01763 0.999998</scales>
+				<segment>patella_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.989396 0.988882 0.989396</scales>
+				<segment>tibia_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.997223 0.997223 1.0299</scales>
+				<segment>talus_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.997223 0.997223 1.0299</scales>
+				<segment>calcn_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.997223 0.997223 1.0299</scales>
+				<segment>toes_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.02097 1.01497</scales>
+				<segment>lumbar5</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.02097 1.01497</scales>
+				<segment>lumbar4</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.02097 1.01497</scales>
+				<segment>lumbar3</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.02097 1.01497</scales>
+				<segment>lumbar2</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.02097 1.01497</scales>
+				<segment>lumbar1</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.00018 1.01497</scales>
+				<segment>thorax</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>auxt1</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv7</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux7</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv6</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux6</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv5</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux5</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv4</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux4</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv3</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux3</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv2</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux2</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>cerv1</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>aux1</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1 1 1</scales>
+				<segment>skull</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.31158 1.31158 1.01497</scales>
+				<segment>jaw</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.00018 1.01497</scales>
+				<segment>clavicle_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.00018 1.01497</scales>
+				<segment>scapula_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00005 0.996592 1.00005</scales>
+				<segment>humerus_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00088 0.984062 1.00088</scales>
+				<segment>ulna_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00088 0.984062 1.00088</scales>
+				<segment>radius_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00088 0.99861 1.00088</scales>
+				<segment>hand_r</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.00018 1.01497</scales>
+				<segment>clavicle_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 0.999937 1.00018 1.01497</scales>
+				<segment>scapula_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00124 0.990802 1.00124</scales>
+				<segment>humerus_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00002 0.993965 1.00002</scales>
+				<segment>ulna_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00002 0.993965 1.00002</scales>
+				<segment>radius_l</segment>
+				<apply>true</apply>
+			</Scale>
+			<Scale>
+				<scales> 1.00002 0.985675 1.00002</scales>
+				<segment>hand_l</segment>
+				<apply>true</apply>
+			</Scale>
+		</objects>
+		<groups />
+	</ScaleSet>
+</OpenSimDocument>

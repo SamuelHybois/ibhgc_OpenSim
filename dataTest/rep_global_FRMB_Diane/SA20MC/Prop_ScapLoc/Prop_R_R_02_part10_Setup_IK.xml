@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSimDocument Version="20302">
+   <InverseKinematicsTool name="SA20MC_model_final">
+      <results_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA20MC\Prop_ScapLoc</results_directory>
+      <input_directory>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA20MC\Prop_ScapLoc</input_directory>
+      <model_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA20MC\modele\SA20MC_model_final.osim</model_file>
+      <constraint_weight>100</constraint_weight>
+      <accuracy>1e-05</accuracy>
+      <IKTaskSet file="Prop_R_R_02_part10_ik_task.xml"/>
+      <marker_file>C:\Users\visiteur\Documents\Sourcetree_OSPipeline\dataTest\rep_global_FRMB\SA20MC\Prop_ScapLoc\Prop_R_R_02_part10.trc</marker_file>
+      <coordinate_file>Unassigned</coordinate_file>
+      <time_range>6.94 7.46</time_range>
+      <report_marker_locations>true</report_marker_locations>
+      <report_errors>true</report_errors>
+      <output_motion_file>Prop_R_R_02_part10_ik.mot</output_motion_file>
+   </InverseKinematicsTool>
+</OpenSimDocument>
